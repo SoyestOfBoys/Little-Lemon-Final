@@ -2,10 +2,11 @@ import star from '../pics/Star.png'
 import photo1 from '../pics/headshot1.jpg'
 import photo2 from '../pics/headshot2.jpg'
 import photo3 from '../pics/headshot3.jpg'
+import './testimonials.css'
 
 function Testimonials() {
   return (
-    <div className="testimonials">
+    <body className="testimonials">
       <h1>Testimonials</h1>
       <div className="review1">
         <img src={photo1} alt="Sophia Patel" />
@@ -23,7 +24,7 @@ function Testimonials() {
         <img src={star} alt='star' /><img src={star} alt='star' /><img src={star} alt='star' /><img src={star} alt='star' /><img src={star} alt='star' />
         <p>"From the moment we walked in, we were greeted with warmth and treated to an unforgettable gastronomic journey."</p>
       </div>
-    </div>
+    </body>
   );
 }
 

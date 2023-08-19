@@ -1,4 +1,5 @@
 import menuTopImg from '../pics/food2.jpg';
+import './menuTop.css'
 
 function MenuTop(){
     return(

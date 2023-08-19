@@ -2,6 +2,7 @@ import Nav from '../Nav'
 import Foot from '../Foot'
 import MenuTop from '../menu_components/menu_top'
 import MenuApp from '../menu_components/menu_app'
+import './menu.css'
 
 function Menu (){
     return(

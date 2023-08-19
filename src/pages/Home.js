@@ -4,17 +4,17 @@ import Hero from '../home_components/Hero'
 import Info from '../home_components/Info'
 import Specials from '../home_components/Specials'
 import Testimonials from '../home_components/Testimonials'
+import './home.css'
 
 function Home(){
     return(
         <div>
-        <h1>Homepage</h1>
-        <Nav />
-        <Hero />
-        <Specials />
-        <Testimonials />
-        <Info />
-        <Foot />
+            <Nav />
+            <Hero />
+            <Specials />
+            <Testimonials />
+            <Info />
+            <Foot />
         </div>
     )
 }

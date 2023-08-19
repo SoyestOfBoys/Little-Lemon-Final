@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 import footLogo from './pics/b.png'
+import './foot.css'
 
 export default function Foot() {
   return (

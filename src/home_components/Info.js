@@ -1,9 +1,10 @@
 import infoPic2 from '../pics/food3.jpg';
 import infoPic1 from '../pics/chefs1.jpg';
+import './info.css'
 
 function Info() {
   return (
-    <div className='Info'>
+    <body className='Info'>
       <h1>Little Lemon</h1>
       <h2>Chicago, IL</h2>
       <div className='infoText'>
@@ -17,7 +18,7 @@ function Info() {
       <div className='iPic2'>
         <img src={infoPic2} alt='Fantastic food!' />
       </div>
-    </div>
+    </body>
   );
 }
 

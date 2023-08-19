@@ -3,7 +3,7 @@ import Foot from '../Foot'
 import Story from '../about_components/Story'
 import Slideshow from '../about_components/About_Slideshow'
 import Staff from '../about_components/Staff'
-
+import './about.css'
 
 function About(){
     return(

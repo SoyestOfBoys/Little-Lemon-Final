@@ -1,10 +1,11 @@
 import item1 from '../pics/item1.svg'
 import item2 from '../pics/item2.jpg'
 import item3 from '../pics/item3.jpg'
+import './specials.css'
 
 function Specials() {
   return (
-    <div className="specials">
+    <body className="specials">
       <button>Order Online</button>
       <h1>Specials</h1>
       <div className="special1">
@@ -25,7 +26,7 @@ function Specials() {
         <p>Indulge in our Lemon Cake, a delightful dessert that brightens your day with every heavenly bite. This moist and tender cake is infused with the tantalizing fresh lemons, delivering a burst of flavor that dances on your taste buds.</p>
         <h3>$5.99</h3>
       </div>
-    </div>
+    </body>
   );
 }
 

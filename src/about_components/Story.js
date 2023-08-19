@@ -1,3 +1,4 @@
+import './story.css'
 
 function Story(){
     return(

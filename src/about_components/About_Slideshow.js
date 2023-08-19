@@ -1,3 +1,5 @@
+import './slideshow.css'
+
 function Slideshow({ children, className, style }){
     return(
         <div

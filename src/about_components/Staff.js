@@ -1,6 +1,7 @@
 import chef from '../pics/chef2.jpg'
 import maitreD from '../pics/maitre.jpg'
 import manager from '../pics/manage.jpg'
+import './staff.css'
 
 function Staff(){
     <div className='staff'>

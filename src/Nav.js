@@ -1,32 +1,33 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 import navLogo from './pics/header_logo.png'
+import './nav.css'
 
 export default function Nav() {
   return (
     <header className='navBar'>
-        <div className='navLogo'>
-            <Link to='/'><img src={navLogo} alt='Little Lemon' /></Link>
+        <div >
+            <Link to='/'><img src={navLogo} alt='Little Lemon' className='navLogo'/></Link>
         </div>
         <nav>
         <ul className='navLinks'>
-        <li className='homeNav'>
-                <Link to="/">Home</Link>
+            <li>
+                <Link to="/"><button  className='homeNav'>Home</button></Link>
             </li>
-            <li className='aboutNav'>
-                <Link to='/about'>About</Link>
+            <li >
+                <Link to='/about'><button className='aboutNav'>About</button></Link>
             </li>
-            <li className="menuNav">
-                <Link to='/menu'>Menu</Link>
+            <li >
+                <Link to='/menu'><button className="menuNav">Menu</button></Link>
             </li>
-            <li className="resNav">
-                <Link to='/reservations'>Reservations</Link>
+            <li >
+                <Link to='/reservations'><button className="resNav">Reservations</button></Link>
             </li>
-            <li className="orderNav">
-                <Link to='/order'>Online Ordering</Link>
+            <li >
+                <Link to='/order'><button className="orderNav">Online Ordering</button></Link>
             </li>
-            <li className='loginNav'>
-                <Link to='/login'>Login</Link>
+            <li >
+                <Link to='/login'><button className='loginNav'>Login</button></Link>
             </li>
         </ul>
         </nav>
