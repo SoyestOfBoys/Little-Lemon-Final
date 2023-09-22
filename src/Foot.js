@@ -6,36 +6,37 @@ import './foot.css'
 export default function Foot() {
   return (
     <footer className='footer'>
-        <div className='footLogo'>
-            <img src={footLogo} alt='Little Lemon' />
+        <div>
+            <img src={footLogo} alt='Little Lemon'  className='footLogo'/>
         </div>
         <nav className='siteMap'>
             <h1>Site Map</h1>
-            <ul className='footLinks'>
-            <li className='homeFoot'>
+            <ul className='footList'>
+            <li>
                 <Link to="/">Home</Link>
             </li>
-            <li className='aboutFoot'>
+            <li>
                 <Link to='/about'>About</Link>
             </li>
-            <li className="menuFoot">
+            <li>
                 <Link to='/menu'>Menu</Link>
             </li>
-            <li className="resFoot">
+            <li>
                 <Link to='/reservations'>Reservations</Link>
             </li>
-            <li className="orderFoot">
+            <li>
                 <Link to='/order'>Online Ordering</Link>
             </li>
-            <li className='loginFoot'>
+            <li>
                 <Link to='/login'>Login</Link>
             </li>
         </ul>
         </nav>
         <div className='contact'>
-            <h2>123 Street St.</h2>
-            <h2>Chicago, IL</h2>
-            <h2>12345</h2>
+            <h1>Contact Info</h1>
+            <h2>123 Street St.
+                Chicago, IL
+                12345</h2>
             <p>(555) 012-3451</p>
             <p>email@email.com</p>
         </div>

@@ -8,6 +8,7 @@ import './home.css'
 
 function Home(){
     return(
+        <body>
         <div>
             <Nav />
             <Hero />
@@ -16,6 +17,7 @@ function Home(){
             <Info />
             <Foot />
         </div>
+        </body>
     )
 }
 

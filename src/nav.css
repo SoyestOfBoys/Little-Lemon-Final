@@ -1,111 +1,48 @@
-@font-face {
-    font-family: Karla;
-    src: url(https://fonts.google.com/specimen/Karla);
+*{
+    margin: 0;
 }
 
-.navBar{
-    display: inline-flex;
+
+nav{
+    background: #edefee;
+}
+
+nav ul{
+    list-style-type:none;
+    padding: 0;
+}
+
+nav li{
+    border: 1px solid #333333;
+    background-color: #495e57;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 19px;
+    padding-bottom: 26px;
+}
+
+nav a{
+    display: block;
+    color: #F4CE14;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+nav a:hover{
+
+}
+
+.NavLogo{
     background-color: #edefee;
+    width: 286px;
+    height: 78px;
 }
 
-.navLogo{
-    max-width: 286px;
-    height: auto;
-    padding-top: 41px;
-    padding-bottom: 26px;
-    padding-right: 11px;
-    padding-left: 27px;
-}
-
-ul{
-    list-style: none;
-}
-
-li{
-    display: inline;
-    padding:11px;
-}
-
-.homeNav{
-    background-color: #495E57;
-    color: #f4ce14;
-    font-size: 40px;
-    font-family: Karla;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    padding-left: 6px;
-    padding-right: 6px;
-    padding-bottom: 26px;
-    padding-top: 19px;
-    border: none;
-}
-
-.aboutNav{
-    background-color: #495E57;
-    color: #f4ce14;
-    font-size: 40px;
-    font-family: Karla;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    padding-left: 6px;
-    padding-right: 6px;
-    padding-bottom: 26px;
-    padding-top: 19px;
-    border: none;
-}
-
-.menuNav{
-    background-color: #495E57;
-    color: #f4ce14;
-    font-size: 40px;
-    font-family: Karla;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    padding-left: 6px;
-    padding-right: 6px;
-    padding-bottom: 26px;
-    padding-top: 19px;
-    border: none;
-}
-
-.resNav{
-    background-color: #495E57;
-    color: #f4ce14;
-    font-size: 40px;
-    font-family: Karla;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    padding-left: 6px;
-    padding-right: 6px;
-    padding-bottom: 26px;
-    padding-top: 19px;
-    border: none;
-}
-
-.orderNav{
-    background-color: #495E57;
-    color: #f4ce14;
-    font-size: 40px;
-    font-family: Karla;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    padding-left: 6px;
-    padding-right: 6px;
-    padding-bottom: 26px;
-    padding-top: 19px;
-    border: none;
-}
-
-.loginNav{
-    background-color: #495E57;
-    color: #f4ce14;
-    font-size: 40px;
-    font-family: Karla;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    padding-left: 6px;
-    padding-right: 6px;
-    padding-bottom: 26px;
-    padding-top: 19px;
-    border: none;
-}
+@media screen {
+    nav ul{
+    display: flex;
+    justify-content: space-around;
+    }
+    }
