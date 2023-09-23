@@ -6,26 +6,26 @@ import './nav.css'
 export default function Nav() {
     return (
         <body className='navBar'>
-          <Link to='/'><img src={navLogo} alt='Little Lemon' className='NavLogo'/></Link>
           <nav>
           <ul className='navLinks'>
-              <li>
-                  <Link to="/" className='NavButton'>Home</Link>
+          <Link to='/'><img src={navLogo} alt='Little Lemon' className='NavLogo'/></Link>
+              <li className='NavButton'>
+                  <Link to="/" className="NavLink">Home</Link>
               </li>
-              <li >
-                  <Link to='/about' className='NavButton'>About</Link>
+              <li className='NavButton'>
+                  <Link to='/about' className="NavLink">About</Link>
               </li>
-              <li >
-                  <Link to='/menu' className="NavButton">Menu</Link>
+              <li className='NavButton'>
+                  <Link to='/menu' className="NavLink">Menu</Link>
               </li>
-              <li >
-                  <Link to='/reservations' className="NavButton">Reservations</Link>
+              <li className='NavButton'>
+                  <Link to='/reservations' className="NavLink">Reservations</Link>
               </li>
-              <li >
-                  <Link to='/order' className="NavButton">Order</Link>
+              <li className='NavButton'>
+                  <Link to='/order' className="NavLink">Order</Link>
               </li>
-              <li >
-                  <Link to='/login' className='NavButton'>Login</Link>
+              <li className='NavButton'>
+                  <Link to='/login' className="NavLink">Login</Link>
               </li>
           </ul>
           </nav>
