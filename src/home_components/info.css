@@ -1,3 +1,15 @@
+@media screen and (min-width: 500px) {
+    nav ul{
+    display: flex;
+    justify-content: space-around;
+    }
+}
+
+*{
+    margin: 0;
+}
+
 .Info{
     background-color: #333333;
 }
+

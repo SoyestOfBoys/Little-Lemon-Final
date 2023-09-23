@@ -1,3 +1,53 @@
+@media screen and (min-width: 500px) {
+    nav ul{
+    display: flex;
+    justify-content: space-around;
+    }
+}
+
+*{
+    margin: 0;
+}
+
 .heroMain{
     background-color:  #495E57;
+    color: #edefee;
+}
+
+.heroMain h1{
+    font-size: 64px;
+    font-weight: 500;
+    font-family: "Markazi";
+}
+
+.heroMain h3{
+    font-size: 40px;
+    font-weight: 400;
+    font-family: "Markazi";
+}
+
+.heroMain p{
+    font-family: "Karla";
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 18px;
+}
+
+.HeroPic {
+    max-width: 577px;
+    max-height: auto;
+    border: #333333 solid;
+    border-width: 5px;
+    border-radius: 16px;
+}
+
+.BookButton {
+    background-color: #F4CE14;
+    color:#495E57;
+    font-family: 'Markazi';
+    font-size: 64px;
+    align-content: center;
+    font-weight: 700;
+    border-radius: 16px;
+    border:#495E57 2px solid;
 }

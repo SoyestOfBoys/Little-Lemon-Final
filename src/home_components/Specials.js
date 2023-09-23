@@ -6,7 +6,7 @@ import './specials.css'
 function Specials() {
   return (
     <body className="specials">
-      <button>Order Online</button>
+      <button className='OrderButton'>Order Online</button>
       <h1>Specials</h1>
       <div className="special1">
         <img src={item1} alt='Bruschetta' />

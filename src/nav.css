@@ -9,7 +9,7 @@ nav{
 
 nav ul{
     list-style-type:none;
-    padding-top: 53px;
+    padding-top: 25px;
 }
 
 .NavButton{
@@ -19,7 +19,7 @@ nav ul{
     padding-left: 8px;
     padding-right: 8px;
     padding-top: 19px;
-    padding-bottom: 26px;
+    padding-bottom: 19px;
 }
 
 nav a{
@@ -29,6 +29,7 @@ nav a{
     font-size: 40px;
     font-weight: 400;
     text-decoration: none;
+    font-family: 'Karla';
 }
 
 nav a:hover{
@@ -38,13 +39,13 @@ nav a:hover{
 
 .NavLogo{
     background-color: #edefee;
-    width: 286px;
-    height: 78px;
+    max-width: 286px;
+    max-height: auto;
     padding-right: 5px;
     padding-left: 5px;
 }
 
-@media screen {
+@media screen and (min-width: 500px) {
     nav ul{
     display: flex;
     justify-content: space-around;
