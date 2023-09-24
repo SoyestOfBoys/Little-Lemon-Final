@@ -13,6 +13,61 @@
     background-color: #edefee;
 }
 
-.OrderButton{
-    
+.specials h1{
+    font-family: 'Markazi';
+    font-weight: 500;
+    font-size: 64px;
+    color: #495E57;
+}
+
+.OrderButton {
+    background-color: #F4CE14;
+    align-content: center;
+    border-radius: 16px;
+    border:#495E57 2px solid;
+}
+
+.OrderButton a{
+    font-weight: 700;
+    font-size: 64px;
+    text-decoration: none;
+    color:#495E57;
+    font-family: 'Markazi';
+}
+
+.OrderButton a:hover{
+    color: #333333
+}
+
+.box{
+    height: 474px;
+    width: 344px;
+    border: #495E57 5px solid;
+    border-radius: 16px;
+    color: #333333;
+    background-color: #fbdabb;
+    font-family: 'Karla';
+}
+
+.box img{
+    height: 206px;
+    width: 344px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.box h2{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.box p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.box h3{
+    color:#495E57;
+    font-size: 20px;
+    font-weight: 800;
 }

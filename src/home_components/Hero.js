@@ -1,5 +1,6 @@
 import heroPic from '../pics/Hero.jpg'
 import './hero.css'
+import { Link } from 'react-router-dom';
 
 function Hero() {
   return (
@@ -9,7 +10,7 @@ function Hero() {
       <p>Nestled in the heart of Chicago, our cozy and vibrant café is a haven for lemon lovers and food enthusiasts alike. Embrace the sunny charm of our charming establishment as we invite you to embark on a delightful culinary journey.</p>
       <p>Whether you're seeking a delightful slice of heaven with your coffee or a whole cake to celebrate life's special moments, Little Lemon promises a warm ambiance and a lemony twist to brighten your day.</p>
       <img className='HeroPic' src={heroPic} alt="Little Lemon Patio" />
-      <button className='BookButton'>Book Table</button>
+      <button className='BookButton'><Link to='/reservations'>Book Table</Link></button>
     </body>
   );
 }

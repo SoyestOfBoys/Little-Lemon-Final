@@ -43,11 +43,19 @@
 
 .BookButton {
     background-color: #F4CE14;
-    color:#495E57;
-    font-family: 'Markazi';
-    font-size: 64px;
     align-content: center;
-    font-weight: 700;
     border-radius: 16px;
     border:#495E57 2px solid;
+}
+
+.BookButton a{
+    font-weight: 700;
+    font-size: 64px;
+    text-decoration: none;
+    color:#495E57;
+    font-family: 'Markazi';
+}
+
+.BookButton a:hover{
+    color: #333333
 }
