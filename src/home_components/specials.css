@@ -16,7 +16,7 @@
 .specials h1{
     font-family: 'Markazi';
     font-weight: 500;
-    font-size: 64px;
+    font-size: 4.444vw;
     color: #495E57;
 }
 
@@ -29,7 +29,7 @@
 
 .OrderButton a{
     font-weight: 700;
-    font-size: 64px;
+    font-size: 4.444vw;
     text-decoration: none;
     color:#495E57;
     font-family: 'Markazi';
@@ -40,8 +40,8 @@
 }
 
 .box{
-    height: 474px;
-    width: 344px;
+    height: 32.917vw;
+    width: 23.889vw;
     border: #495E57 5px solid;
     border-radius: 16px;
     color: #333333;
@@ -50,24 +50,24 @@
 }
 
 .box img{
-    height: 206px;
-    width: 344px;
+    height: 14.306vw;
+    width: 23.889vw;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
 }
 
 .box h2{
-    font-size: 40px;
+    font-size: 2.778vw;
     font-weight: 800;
 }
 
 .box p{
-    font-size: 18px;
+    font-size: 1.250vw;
     font-weight: 500;
 }
 
 .box h3{
     color:#495E57;
-    font-size: 20px;
+    font-size: 1.389vw;
     font-weight: 800;
 }

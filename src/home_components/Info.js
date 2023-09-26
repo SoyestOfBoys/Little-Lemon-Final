@@ -12,11 +12,11 @@ function Info() {
         <p>Beyond our dedication to exceptional cuisine, we are committed to providing impeccable service that leaves a lasting impression. Our attentive and friendly staff are always ready to cater to your needs, ensuring your visit to Little Lemon is filled with warmth and hospitality.</p>
         <p>Whether you're seeking a cozy spot for a leisurely brunch, a memorable dinner with loved ones, or simply a slice of our signature Lemon Cake to brighten your day, Little Lemon welcomes you to indulge in a culinary journey like no other.</p>
       </div>
-      <div className='iPic1'>
-        <img src={infoPic1} alt='Kitchen Staff' />
+      <div>
+        <img className='iPic 1' src={infoPic1} alt='Kitchen Staff' />
       </div>
-      <div className='iPic2'>
-        <img src={infoPic2} alt='Fantastic food!' />
+      <div>
+        <img className='iPic 2' src={infoPic2} alt='Fantastic food!' />
       </div>
     </body>
   );

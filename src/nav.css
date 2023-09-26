@@ -3,50 +3,52 @@
 }
 
 
-nav{
+.navBar{
     background: #edefee;
+    width: 100vw;
+    height: auto;
 }
 
-nav ul{
+.navBar ul{
     list-style-type:none;
-    padding-top: 25px;
+    padding-top: 1.736vw;
 }
 
 .NavButton{
     background-color: #495e57;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-top: 19px;
-    padding-bottom: 19px;
+    padding-left: 0.556vw;
+    padding-right: 0.556vw;
+    padding-top: 1.319vw;
+    padding-bottom: 1.319vw;
 }
 
-nav a{
+.navLinks a{
     display: block;
     color: #F4CE14;
     font-family: Karla;
-    font-size: 40px;
+    font-size: 2.778vw;
     font-weight: 400;
     text-decoration: none;
     font-family: 'Karla';
 }
 
-nav a:hover{
+.navLinks a:hover{
     color:#FBDABB;
     text-decoration: none;
 }
 
 .NavLogo{
     background-color: #edefee;
-    max-width: 286px;
-    max-height: auto;
-    padding-right: 5px;
-    padding-left: 5px;
+   width: 19.861vw;
+    height: auto;
+    padding-right: 0.347vw;
+    padding-left: 0.347vw;
 }
 
 @media screen and (min-width: 500px) {
-    nav ul{
+    .navBar ul{
     display: flex;
     justify-content: space-around;
     }

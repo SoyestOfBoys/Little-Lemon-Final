@@ -1,4 +1,4 @@
-import item1 from '../pics/item1.svg'
+import item1 from '../pics/item1.jpg'
 import item2 from '../pics/item2.jpg'
 import item3 from '../pics/item3.jpg'
 import './specials.css'

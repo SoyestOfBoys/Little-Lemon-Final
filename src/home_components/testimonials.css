@@ -1,3 +1,40 @@
+@media screen and (min-width: 500px) {
+}
+
+*{
+    margin: 0;
+}
+
 .testimonials{
     background-color: #495E57;
+    color: #f4ce14;
+    font-family: 'Markazi';
+    font-size: 4.444vw;
+    font-weight: 500;
+}
+
+.testimonial{
+    width: 23.889vw;
+    height: 22.847vw;
+    border: 5px #ee9972 solid;
+    border-radius: 16px;
+    color: #333333;
+    background-color: #edefee;
+    font-family: 'Karla';
+    font-size: 1.250vw;
+    font-weight: 700;
+}
+
+.Headshot{
+    width: 11.389vw;
+    height: 11.389vw;
+    border:#ee9972 2px solid;
+    border-radius: 16px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.Star{
+    height: 2.569vw;
+    width: 2.569vw;
 }
