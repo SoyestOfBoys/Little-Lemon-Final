@@ -1,7 +1,18 @@
 @media screen and (max-width: 900px) {
     .heroMain{
         flex-direction: column-reverse;
-        justify-content: center;
+    }
+    .Content{
+        margin-left: 33%;
+        margin-right: auto;
+        width: 33%;
+        height: auto;
+    }
+    .HeroLeft{
+        margin-left: 33%;
+        margin-right: auto;
+        width: 33%;
+        height: auto;
     }
 }
 
@@ -12,9 +23,10 @@
 .Content{
     padding-left: 7.431vw;
     padding-top: 1.250vw;
-    padding-bottom: 4.722vw;
+    padding-bottom: 3.572vw;
     padding-right: 8.819vw;
     width: 35.139vw;
+    height: fit-content;
 }
 
 .heroMain{
@@ -25,28 +37,31 @@
     justify-content: center;
 }
 
-.heroMain h1{
+.Content h1{
     font-size: 4.444vw;
     font-weight: 500;
     font-family: "Markazi";
 }
 
-.heroMain h3{
+.Content h3{
     font-size: 2.778vw;
     font-weight: 400;
     font-family: "Markazi";
+    text-align: end;
+    padding-bottom: 1.806vw;
 }
 
 .heroMain p{
     font-family: "Karla";
-    font-size:calc(12px 1.250vw);
+    font-size:1.250vw;
     font-weight: 500;
     padding-bottom: 1.250vw;
 }
 
 .HeroLeft{
     padding-right: 8.542vw;
-    justify-content: space-between;
+    padding-top: 0.972vw;
+    padding-bottom: 0.972vw;
 }
 
 .HeroPic {
@@ -60,17 +75,23 @@
     background-size: 40.069vw 26.736vw;
 }
 
+.ButtonDiv{
+    padding-top: 19.583vw;
+    padding-left: 0.903vw;
+}
+
 .BookButton {
     background-color: #F4CE14;
-    align-content: center;
     border-radius: 16px;
     border:#495E57 2px solid;
-    width: 17.5vw;
+    width: auto;
+    height: 6.528vw;
+    box-shadow: 0.394vw 0.394vw 8px  #333333;
 }
 
 .BookButton a{
     font-weight: 700;
-    font-size:calc(12px 4.444vw);
+    font-size:4.444vw;
     text-decoration: none;
     color:#495E57;
     font-family: 'Markazi';

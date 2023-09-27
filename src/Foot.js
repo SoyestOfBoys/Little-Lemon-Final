@@ -34,9 +34,11 @@ export default function Foot() {
         </nav>
         <div className='contact'>
             <h1>Contact Info</h1>
-            <h2>123 Street St.
-                Chicago, IL
-                12345</h2>
+                <div className='Address'>
+                <h2>123 Street St.</h2>
+                <h2>Chicago, IL</h2>
+                <h2>12345</h2>
+                </div>
             <p>(555) 012-3451</p>
             <p>email@email.com</p>
         </div>
@@ -47,6 +49,8 @@ export default function Foot() {
                 <li><a href='https://www.instagram.com/'>Instagram</a></li>
                 <li><a href='https://twitter.com/?lang=en'>Twitter</a></li>
                 <li><a href='https://www.pinterest.com/'>Pinterest</a></li>
+                <li><a href='https://www.tiktok.com/'>TikTok</a></li>
+                <li><a href='https://www.yelp.com/'>Yelp</a></li>
             </ul>
         </div>
     </footer>

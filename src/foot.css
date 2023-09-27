@@ -11,6 +11,11 @@
 
 .footer ul{
     list-style: none;
+    padding-top: 0.903vw;
+}
+
+.footer li{
+    padding-bottom: 0.694vw;
 }
 
 .footer h2{
@@ -27,7 +32,7 @@
 
 .footer a:hover{
     color: #333333;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .footer{
@@ -36,9 +41,41 @@
     color: #495E57;
     font-weight: 500;
     font-size: 1.250vw;
+    display: flex;
+    justify-content: space-around;
 }
 
 .footLogo{
     width:12.690vw;
     height:22.361vw;
+    padding-top: 1.806vw;
+    padding-bottom: 1.806vw;
+}
+
+.siteMap{
+    padding-top: 3.958vw;
+    text-align: center;
+}
+
+.contact{
+    padding-top: 3.958vw;
+    text-align: center;
+}
+
+.contact h2{
+    padding-bottom: .25vw;
+}
+
+.contact p{
+    padding-bottom: 1.319vw;
+}
+
+.Address{
+    padding-top: 0.903vw;
+    padding-bottom: 1.3vw;
+}
+
+.socials{
+    padding-top: 3.958vw;
+    text-align: center;
 }

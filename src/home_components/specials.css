@@ -1,8 +1,4 @@
 @media screen and (min-width: 500px) {
-    nav ul{
-    display: flex;
-    justify-content: space-around;
-    }
 }
 
 *{
@@ -11,20 +7,36 @@
 
 .specials{
     background-color: #edefee;
+    width: 100vw;
+    height:auto;
 }
 
-.specials h1{
-    font-family: 'Markazi';
+.SpecTop{
+    display: flex;
+    padding-top: 1.250vw;
+    padding-left: 10.208vw;
+    padding-right: 6.667vw;;
+    justify-content: space-around;
+}
+
+.SpecTop h1{
+    font-family: 'Markazi', sans-serif;
     font-weight: 500;
     font-size: 4.444vw;
     color: #495E57;
+    text-shadow: #333333 0.347vw 0.347vw 18px ;
 }
 
 .OrderButton {
     background-color: #F4CE14;
-    align-content: center;
     border-radius: 16px;
     border:#495E57 2px solid;
+    width: fit-content;
+    height: 6.528vw;
+    box-shadow: 0.394vw 0.394vw 8px  #333333;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .OrderButton a{
@@ -39,6 +51,15 @@
     color: #333333
 }
 
+.SpecialMenu{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1.111vw;
+    padding-bottom: 1.389vw;
+}
+
 .box{
     height: 32.917vw;
     width: 23.889vw;
@@ -47,11 +68,15 @@
     color: #333333;
     background-color: #fbdabb;
     font-family: 'Karla';
+    text-align: center;
+    position: relative;
+    justify-content: space-around;
 }
 
 .box img{
     height: 14.306vw;
     width: 23.889vw;
+    border-bottom: #495E57 2px solid;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
 }
@@ -61,13 +86,24 @@
     font-weight: 800;
 }
 
-.box p{
+.TextBox{
+    padding-left: 1.389vw;
+    padding-right: 1.389vw;
+}
+
+.TextBox p{
     font-size: 1.250vw;
     font-weight: 500;
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: .5vw;
 }
 
 .box h3{
     color:#495E57;
     font-size: 1.389vw;
     font-weight: 800;
+    position: absolute;
+    bottom: 1vw;
+    right: 1vw;
 }

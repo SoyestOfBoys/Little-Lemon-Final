@@ -1,8 +1,4 @@
 @media screen and (min-width: 500px) {
-    nav ul{
-    display: flex;
-    justify-content: space-around;
-    }
 }
 
 *{
@@ -14,16 +10,27 @@
     color: #F4CE14;
     font-family: 'Markazi';
     -webkit-text-stroke: 1px #495E57;
+    display: flex;
+}
+
+.InfoLeft{
+    padding-top: 1.736vw;
+    padding-left: 6.528vw;
+    padding-bottom: 6.597vw;
+    padding-right: 2.778vw;
 }
 
 .Info h1{
     font-weight: 500;
     font-size: 4.444vw;
+    padding-left: 1.944vw;
 }
 
 .Info h2{
     font-size: 2.778vw;
     font-weight: 400;
+    padding-left: 18.819vw;
+    padding-bottom: 1.944vw;
 }
 
 .infoText{
@@ -34,9 +41,23 @@
     font-family: 'Karla';
     font-size: 1.250vw;
     font-weight: 500;
-    max-width: 30.694vw;
-    max-height: 27.778vw;
+    width: 30.694vw;
+    max-height: auto;
     -webkit-text-stroke: 0px;
+}
+
+.infoText p{
+    padding-left: 1.181vw;
+    padding-right: 1.181vw;
+    padding-top: 1.181vw;
+}
+
+.iTextBottom{
+    padding-bottom: 1.181vw;
+}
+
+.InfoRight{
+    position: relative;
 }
 
 .iPic{
@@ -44,4 +65,18 @@
     height: 34.653vw;
     border: 2px #f4ce14 solid;
     border-radius: 16px;
+}
+
+.iPicBox1{
+    position: absolute;
+    top: 2.778vw;
+    left: 21.806vw;
+    z-index: 10;
+}
+
+.iPicBox2{
+    position: absolute;
+    top:9.7vw;
+    left:0vw;
+    z-index: 5;
 }
