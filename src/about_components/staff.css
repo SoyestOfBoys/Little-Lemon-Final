@@ -1,0 +1,25 @@
+.staff{
+    width: 100vw;
+    height: auto;
+    background-color: #333333;
+    text-align: center;
+}
+
+.staffHead{
+    color: #FBDABB;
+    font-family: 'Markazi', sans-serif;
+    font-size: 4.444vw;
+    font-weight: 500;
+}
+
+.BioSec{
+    display: flex;
+}
+
+.staffer{
+    background-color: #EE9972;
+    color: #333333;
+    width: 25vw;
+    height: 40vw;
+    border-radius: 16px;
+}

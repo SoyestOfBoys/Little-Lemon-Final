@@ -1,0 +1,17 @@
+.story{
+    width: 100vw;
+    background-color: #EDEFEE;
+}
+
+.pBox{
+    width: 80vw;
+    font-family: 'Markazi';
+    font-weight: 400;
+    padding-top: 2.778vw;
+    padding-left: 10vw;
+    font-size: 2.778vw;
+}
+
+.pBox p{
+    padding-bottom: 2.778vw;
+}

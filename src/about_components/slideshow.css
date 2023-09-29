@@ -1,0 +1,26 @@
+.SlideshowSection{
+    background-color: #495E57;
+    width: 100vw;
+    height: auto;
+    max-height: 62.500vw;
+}
+
+.SlideApp{
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    position: relative;
+}
+
+.AboutTitle{
+    color: #333333;
+    position: absolute;
+    width:37.5vw;
+    height:auto;
+    font-size: 4.444vw;
+    font-weight: 500;
+    font-family: 'Markazi';
+    top: 7vw;
+    left: 32.5vw;
+    text-align: center;
+    -webkit-text-stroke: 1.5px #F4CE14;
+}
