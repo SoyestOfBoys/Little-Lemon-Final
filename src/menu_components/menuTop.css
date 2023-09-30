@@ -1,0 +1,42 @@
+.menuTop{
+    display: flex;
+    background-color: #495E57;
+    color: #EDEFEE;
+    height: auto;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+
+.menuTopImage{
+    padding-top: 1.889vw;
+    padding-left: 2.986vw;
+}
+
+.menuTopImage img{
+    width: 30.139vw;
+    height: auto;
+    border: #EDEFEE 2px solid;
+    border-radius: 16px;
+    box-shadow: 0.394vw 0.394vw 8px  #333333;
+}
+
+.menuTopText{
+    width: 58.611vw;
+    height: auto;
+    padding-left: 2.014vw;
+}
+
+.menuTopText h1{
+    text-align: center;
+    font-family: 'Markazi', sans-serif;
+    font-weight: 500;
+    font-size: 4.444vw;
+    -webkit-text-stroke: #333333 1px;
+}
+
+.menuTopText p{
+    padding-top: 1vw;
+    font-family: 'Karla';
+    font-weight: 500;
+    font-size: 1.250vw;
+}

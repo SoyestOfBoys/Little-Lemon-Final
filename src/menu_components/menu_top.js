@@ -1,10 +1,10 @@
-import menuTopImg from '../pics/food2.jpg';
+import menuTopImg from '../pics/menutop.jpg';
 import './menuTop.css'
 
 function MenuTop(){
     return(
         <div className='menuTop'>
-            <div className='menuTop[Image'>
+            <div className='menuTopImage'>
                 <img src={menuTopImg} alt="Great eats!" />
             </div>
             <div className='menuTopText'>
