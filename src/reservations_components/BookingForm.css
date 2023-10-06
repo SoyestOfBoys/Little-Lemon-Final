@@ -1,0 +1,22 @@
+.ResForm{
+    background-color: #EDEFEE;
+    color: #333333;
+    border: #F4CE14 3px solid;
+    border-radius: 16px;
+    width: 75vw;
+    height: auto;
+    text-align: center;
+    padding-bottom: 2vw;
+    font-size: 2.778vw;
+    justify-content: space-between;
+}
+
+.ResButton{
+    background-color:#EDEFEE;
+    border: #495E57 2px solid;
+    border-radius: 16px;
+}
+
+.ResButton:hover{
+    border:#F4CE14 2px solid;
+}
