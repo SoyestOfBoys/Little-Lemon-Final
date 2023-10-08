@@ -22,12 +22,12 @@
 
 .Info h1{
     font-weight: 500;
-    font-size: 4.444vw;
+    font-size: 40pt;
     padding-left: 1.944vw;
 }
 
 .Info h2{
-    font-size: 2.778vw;
+    font-size: 18pt;
     font-weight: 400;
     padding-left: 18.819vw;
     padding-bottom: 1.944vw;
@@ -39,7 +39,7 @@
     border: 2px #F4CE14 solid;
     border-radius: 16px;
     font-family: 'Karla';
-    font-size: 1.250vw;
+    font-size: 16pt;
     font-weight: 500;
     width: 30.694vw;
     max-height: auto;

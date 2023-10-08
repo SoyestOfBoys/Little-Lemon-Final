@@ -3,20 +3,43 @@
     color: #333333;
     border: #F4CE14 3px solid;
     border-radius: 16px;
-    width: 75vw;
+    width: 80vw;
     height: auto;
     text-align: center;
     padding-bottom: 2vw;
-    font-size: 2.778vw;
-    justify-content: space-between;
+    padding-top: 2vw;
+    font-size: 18pt;
+    box-shadow: 0.394vw 0.394vw 8px  #333333;
+}
+
+.ResForm input, select, label, textarea{
+    font-size: 18pt;
+    margin: .5vw;
+    margin-bottom: 1vh;
 }
 
 .ResButton{
-    background-color:#EDEFEE;
+    background-color:#F4CE14;
     border: #495E57 2px solid;
     border-radius: 16px;
+    font-size: 2.778vw;
+    padding: .5vw;
+    box-shadow: 0.394vw 0.394vw 8px  #333333;
+    color: #495E57;
 }
 
 .ResButton:hover{
-    border:#F4CE14 2px solid;
+    border: #333333 2px solid;
+    color: #333333;
+    cursor: pointer;
+}
+
+.ShortText{
+    width: 50%;
+}
+
+.LongText{
+    width: 50%;
+    min-height: 25vh;
+    font-size: 18pt;
 }

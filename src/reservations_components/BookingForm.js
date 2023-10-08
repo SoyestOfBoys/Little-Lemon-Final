@@ -1,4 +1,3 @@
-import { FlashAuto } from '@material-ui/icons';
 import './BookingForm.css'
 import React, { useState } from "react";
 
@@ -42,27 +41,32 @@ return  (
 		<div><lable htmlFor='name'>
 			Name:
 		</lable>
-		<input required placeholder='Name' type='text' id='name' name='name' value={formData.name} onChange={handleChange}/></div>
+		<input className='ShortText' required placeholder='Name' type='text' id='name' name='name'
+		 value={formData.name} onChange={handleChange}/></div>
 
-		<div><label htmlFor='phone'>
+	<div><label htmlFor='phone'>
 			Phone:
 		</label>
-		<input required placeholder='Phone Number' type='tel' id='tel' name='tel' value={formData.tel} onChange={handleChange}/></div>
+		<input className='ShortText' required placeholder='Phone Number' type='tel' id='tel' name='tel'
+		 value={formData.tel} onChange={handleChange}/></div>
 
 
-		<div><lable htmlFor='email'>
+	<div><lable htmlFor='email'>
 			Email:
 		</lable>
-		<input required placeholder='Email' type='email' id='email' name='email' value={formData.email} onChange={handleChange}/></div>
+		<input className='ShortText' required placeholder='Email' type='email' id='email' name='email'
+		value={formData.email} onChange={handleChange}/></div>
 
 		<div><label>
 			Date:
 		</label>
-		<input required type='date' id='date' name='date' value={formData.date} onChange={handleChange}/></div>
+		<input required type='date' id='date' name='date'
+		value={formData.date} onChange={handleChange}/>
 
-		<div><label htmlFor='time'>
+		<label htmlFor='time'>
 				Time:</label>
-				<select required value={selectedTime} onChange={handleDropdownChange} defaultValue={'default'}>
+				<select required value={selectedTime} onChange={handleDropdownChange}
+				defaultValue={'default'}>
 					<option disabled value='default'>Select Time</option>
 					<option value='17:00'>17:00</option>
                 	<option value='18:00'>18:00</option>
@@ -70,22 +74,21 @@ return  (
                		<option value='20:00'>20:00</option>
                 	<option value='21:00'>21:00</option>
                	 	<option value='22:00'>22:00</option>
-				</select></div>
+				</select>
 
-			<div><lable htmlFor='guests'>
+		<lable htmlFor='guests'>
 				Party Size:
 			</lable>
-			<input required type='number' id='guests' name='guests' value={formData.guest} onChange={handleChange} placeholder='Guest#' min='1' max='10'/></div>
+			<input required type='number' id='guests' name='guests' value={formData.guest}
+			 onChange={handleChange} placeholder='Guest#' min='1' max='10'/></div>
 
-			<div><lable htmlFor='event'>
+		<div><lable htmlFor='event'>
 				Are you celebating a special occasion with us?
 			</lable>
-			<input  type='checkbox' id='event' name='event' value={formData.eventTrue} onChange={handleCheckboxChange} />Yes</div>
-
-			<div><lable htmlFor='occasion'>
-				Occasion
-			</lable>
-			<select disabled={isChecked ? false : true} required name='EventSelect'  value={selectedOccasion} onChange={handleDropdownChange2}>
+			<input  type='checkbox' id='event' name='event' value={formData.eventTrue}
+			 onChange={handleCheckboxChange} />Yes
+			<select disabled={isChecked ? false : true} required name='EventSelect'
+			 value={selectedOccasion} onChange={handleDropdownChange2}>
 					<option disabled value='default1'>Select Occasion</option>
 					<option value='Birthday'>Birthday</option>
                 	<option value='Engagement'>Engagement</option>
@@ -94,10 +97,13 @@ return  (
                 	<option value='Other'>Other</option>
 				</select></div>
 
-				<div><label htmlFor='comments'>Comments and Special Requests:</label>
-				<input type='text' id='comments' name='comments' value={formData.comments} onChange={handleChange} placeholder='How can we best serve you?'/></div>
+			<div><label htmlFor='comments'>Comments and Special Requests:</label></div>
+				<div><textarea className='LongText' id='comments' name='comments'
+				 value={formData.comments} onChange={handleChange}
+				 placeholder='How can we best serve you?'/></div>
 
-				<button className='ResButton' type='submit'>Make Your Reservation</button>
+			<div><button className='ResButton' type='submit'>Make Your Reservation</button></div>
+
 				</form>
 	);
 }

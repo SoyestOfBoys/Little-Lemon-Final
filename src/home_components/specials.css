@@ -22,7 +22,7 @@
 .SpecTop h1{
     font-family: 'Markazi', sans-serif;
     font-weight: 500;
-    font-size: 4.444vw;
+    font-size: 40pt;
     color: #495E57;
     text-shadow: #333333 0.347vw 0.347vw 18px ;
 }
@@ -41,7 +41,7 @@
 
 .OrderButton a{
     font-weight: 700;
-    font-size: 4.444vw;
+    font-size: 40pt;
     text-decoration: none;
     color:#495E57;
     font-family: 'Markazi';
@@ -61,7 +61,7 @@
 }
 
 .box{
-    height: 32.917vw;
+    height: auto;
     width: 23.889vw;
     border: #495E57 5px solid;
     border-radius: 16px;
@@ -82,7 +82,7 @@
 }
 
 .box h2{
-    font-size: 2.778vw;
+    font-size: 18pt;
     font-weight: 800;
 }
 
@@ -92,16 +92,17 @@
 }
 
 .TextBox p{
-    font-size: 1.250vw;
+    font-size: 16pt;
     font-weight: 500;
     display: table-cell;
     vertical-align: middle;
-    padding-top: .5vw;
+    padding-top: .5vh;
+    padding-bottom: 5vh;
 }
 
 .box h3{
     color:#495E57;
-    font-size: 1.389vw;
+    font-size: 18pt;
     font-weight: 800;
     position: absolute;
     bottom: 1vw;

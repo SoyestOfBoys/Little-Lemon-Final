@@ -2,14 +2,16 @@
     background-color: #495E57;
     padding-top: 2vh;
     padding-bottom: 5vh;
-    padding-left: 1.5vw;
-    padding-right: 1.5vw;
     text-align: center;
 }
 
 .FormDiv h1{
     color: #F4CE14;
-    font-size: 4.444vw;
+    font-size: 40pt;
     font-family: 'Markazi';
     padding-bottom: 2vh;
+}
+
+.Form{
+    margin-left: 10vw;
 }

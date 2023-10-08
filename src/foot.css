@@ -5,27 +5,27 @@
 .footer h1{
     font-family: 'Markazi';
     font-weight: 400;
-    font-size: 2.778vw;
+    font-size: 40pt;
     color: #333333;
 }
 
 .footer ul{
     list-style: none;
-    padding-top: 0.903vw;
+    padding-top: 1vh;
 }
 
 .footer li{
-    padding-bottom: 0.694vw;
+    padding-bottom: 1vh;
 }
 
 .footer h2{
     font-weight: 700;
-    font-size: 1.250vw;
+    font-size: 18pt;
 }
 
 .footer a{
     font-weight: 500;
-    font-size: 1.250vw;
+    font-size: 16pt;
     text-decoration: none;
     color: #495E57;
 }
@@ -40,7 +40,7 @@
     font-family: 'Karla';
     color: #495E57;
     font-weight: 500;
-    font-size: 1.250vw;
+    font-size: 16pt;
     display: flex;
     justify-content: space-around;
 }
@@ -48,17 +48,17 @@
 .footLogo{
     width:12.690vw;
     height:22.361vw;
-    padding-top: 1.806vw;
-    padding-bottom: 1.806vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 .siteMap{
-    padding-top: 3.958vw;
+    padding-top: 3vh;
     text-align: center;
 }
 
 .contact{
-    padding-top: 3.958vw;
+    padding-top: 3vh;
     text-align: center;
 }
 
@@ -76,6 +76,6 @@
 }
 
 .socials{
-    padding-top: 3.958vw;
+    padding-top: 3vh;
     text-align: center;
 }

@@ -5,7 +5,9 @@ function BookingPage(){
     return(
         <div className='FormDiv'>
             <h1>Reservation Form</h1>
-            <BookingForm />
+            <div className='Form'>
+                <BookingForm />
+            </div>
         </div>
     )
 }
