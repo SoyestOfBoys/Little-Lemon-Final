@@ -1,9 +1,14 @@
 import './orderApp.css'
 
-function OrderApp(){
+export default function BookingForm() {
+
+
     return(
-        <h1>Placeholder</h1>
+        <body>
+            <form>
+                <h1>placeholder</h1>
+                <button>Submit Order</button>
+            </form>
+        </body>
     )
 }
-
-export default OrderApp
