@@ -6,7 +6,7 @@ const BookingPage = (props) =>{
         <div className='FormDiv'>
             <h1>Book Your Table</h1>
                 <div className='Form'>
-                    <BookingForm availableTimes={props.availableTimes} dispatch={props.dispatch} 
+                    <BookingForm availableTimes={props.availableTimes} dispatch={props.dispatch}
                     submitForm={props.submitForm}/>
                 </div>
         </div>

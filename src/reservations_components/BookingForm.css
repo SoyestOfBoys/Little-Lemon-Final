@@ -43,3 +43,7 @@
     min-height: 25vh;
     font-size: 18pt;
 }
+
+.phone{
+    display: inline;
+}

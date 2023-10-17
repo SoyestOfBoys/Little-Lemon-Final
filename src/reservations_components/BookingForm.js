@@ -11,7 +11,9 @@ const BookingForm = (props) => {
 	const [date, setDate] = useState("");
 	const [times, setTimes] = useState("")
 	const [name, setName] = useState("")
-	const [phone, setPhone] = useState("")
+	const [phone1, setPhone1] = useState("")
+	const [phone2, setPhone2] = useState("")
+	const [phone3, setPhone3] = useState("")
 	const [email, setEmail]  = useState("")
 	const [comments, setComments] = useState('')
 
@@ -30,6 +32,7 @@ const BookingForm = (props) => {
 	const handleCheckboxChange = () => {
 		setIsChecked(!isChecked);
 	}
+
 
 return  (
 	<form className='ResForm' onSubmit={handleSumbit}>
@@ -65,11 +68,19 @@ return  (
 		 value={name} onChange={(e) =>
 			{setName(e.target.value)}}/></div>
 
-	<div><label htmlFor='phone'>
+	<div className='phone'><label htmlFor='phone'>
 			Phone:
 		</label>
-		<input className='ShortText' required placeholder='Phone Number' type='tel' id='tel' name='tel'
-		 value={phone} onChange={(e) => {setPhone(e.target.value)}}/></div>
+		<p>+1</p>
+		<p>(</p><input inputmode='numeric'  required placeholder='XXX' type='tel' id='tel' name='tel'
+		 value={phone1} minLength={3} maxLength={3} size='3' pattern="[0-9]{3}" onChange={(e) => {setPhone1(e.target.value)}}/>
+		 <p>)</p>
+		 <input inputmode='numeric' required placeholder='XXX' type='tel' id='tel' name='tel'
+		 value={phone2} minLength={3} maxLength={3} size='3' pattern="[0-9]{3}" onChange={(e) => {setPhone2(e.target.value)}}/>
+		 </div>
+		 <p>-</p>
+		 <input inputmode='numeric'  required placeholder='XXXX' type='tel' id='tel' name='tel'
+		 value={phone3} minLength={4} maxLength={4} size='4' pattern="[0-9]{4}" onChange={(e) => {setPhone3(e.target.value)}}/>
 
 
 	<div><lable htmlFor='email'>
@@ -99,7 +110,7 @@ return  (
 				 placeholder='How can we best serve you?'/></div>
 
 			<div>
-              <input aria-label="On Click" type={"submit"} value={"Make Your Reservation"}></input>
+              <input aria-label="On Click" type={"submit"} value={"Book Now"}></input>
             </div>
 
 						</fieldset>
