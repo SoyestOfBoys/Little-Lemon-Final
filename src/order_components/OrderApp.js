@@ -1,6 +1,6 @@
 import './orderApp.css'
 
-export default function BookingForm() {
+export default function OrderApp() {
 
 
     return(

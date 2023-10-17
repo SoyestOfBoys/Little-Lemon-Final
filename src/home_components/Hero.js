@@ -11,7 +11,7 @@ function Hero() {
       <p>Whether you're seeking a delightful slice of heaven with your coffee or a whole cake to celebrate life's special moments, Little Lemon promises a warm ambiance and a lemony twist to brighten your day.</p></div>
       <div className='HeroLeft'>
       <div className='HeroPic'>
-      <div className='ButtonDiv'><button className='BookButton'><Link to='/reservations'>Book Table</Link></button></div>
+      <div className='ButtonDiv'><button className='BookButton'><Link to='/booking'>Book Table</Link></button></div>
       </div></div>
     </body>
   );

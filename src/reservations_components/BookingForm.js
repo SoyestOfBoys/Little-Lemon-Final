@@ -1,33 +1,29 @@
 import './BookingForm.css'
 import React, { useState } from "react";
 
+
 // Need to set date, time, party size, occasion, and submit button
 
-export default function BookingForm() {
+const BookingForm = (props) => {
 
-	const [formData, setFormData] = useState({})
+	const [occasion, setOccasion] = useState("");
+	const [guests, setGuests] = useState("");
+	const [date, setDate] = useState("");
+	const [times, setTimes] = useState("")
+	const [name, setName] = useState("")
+	const [phone, setPhone] = useState("")
+	const [email, setEmail]  = useState("")
+	const [comments, setComments] = useState('')
 
-	const [selectedTime, setSelectedTime] = useState("default");
+	const handleSumbit = (e) => {
+		e.preventDefault();
+		props.submitForm(e);
+		};
 
-	    const  handleDropdownChange = (event) => {
-		setSelectedTime(event.target.value);
-	};
-
-	const [selectedOccasion, setSelectedOccasion] = useState("default1");
-
-	    const  handleDropdownChange2 = (event) => {
-		setSelectedOccasion(event.target.value);
-	};
-
-	const handleChange = (event) => {
-		const { name, value } = event.target;
-		setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
-	 };
-
-	const handleSubmit = (event) => {
-		event.preventDefault();
-		alert()
-	}
+	const handleChange = (e) => {
+		 setDate(e);
+		 props.dispatch(e);
+		}
 
 	const [isChecked, setIsChecked] = useState(false)
 
@@ -36,59 +32,59 @@ export default function BookingForm() {
 	}
 
 return  (
-	<form className='ResForm' onSubmit={handleSubmit}>
+	<form className='ResForm' onSubmit={handleSumbit}>
+		<fieldset>
+
+		<div>
+			<label htmlFor="book-date">Choose Date</label>
+			<input id="book-date" value={date} onChange={(e) =>
+			handleChange(e.target.value)} type="date" required/>
+		</div>
+
+		<div>
+              <label htmlFor="book-time">Choose Time</label>
+              <select id="book-time" value={times} onChange={(e) =>
+				setTimes(e.target.value)} required>
+                <option value="">Select a Time</option>
+               {props.availableTimes.availableTimes.map(availableTimes =>
+				{return <option key={availableTimes}>{availableTimes}</option>})}
+              </select>
+        </div>
+
+		<div>
+              <label htmlFor="book-guests">Number of Guests</label>
+              <input id="book-guests" min="1" value={guests} onChange={(e) =>
+				{setGuests(e.target.value)}} type={"number"} placeholder={0} max={10} required></input>
+        </div>
+
 
 		<div><lable htmlFor='name'>
 			Name:
 		</lable>
 		<input className='ShortText' required placeholder='Name' type='text' id='name' name='name'
-		 value={formData.name} onChange={handleChange}/></div>
+		 value={name} onChange={(e) =>
+			{setName(e.target.value)}}/></div>
 
 	<div><label htmlFor='phone'>
 			Phone:
 		</label>
 		<input className='ShortText' required placeholder='Phone Number' type='tel' id='tel' name='tel'
-		 value={formData.tel} onChange={handleChange}/></div>
+		 value={phone} onChange={(e) => {setPhone(e.target.value)}}/></div>
 
 
 	<div><lable htmlFor='email'>
 			Email:
 		</lable>
 		<input className='ShortText' required placeholder='Email' type='email' id='email' name='email'
-		value={formData.email} onChange={handleChange}/></div>
+		value={email} onChange={(e) => {setEmail(e.target.value)}} /></div>
 
-		<div><label>
-			Date:
-		</label>
-		<input required type='date' id='date' name='date'
-		value={formData.date} onChange={handleChange}/>
-
-		<label htmlFor='time'>
-				Time:</label>
-				<select required value={selectedTime} onChange={handleDropdownChange}
-				defaultValue={'default'}>
-					<option disabled value='default'>Select Time</option>
-					<option value='17:00'>17:00</option>
-                	<option value='18:00'>18:00</option>
-                	<option value='19:00'>19:00</option>
-               		<option value='20:00'>20:00</option>
-                	<option value='21:00'>21:00</option>
-               	 	<option value='22:00'>22:00</option>
-				</select>
-
-		<lable htmlFor='guests'>
-				Party Size:
-			</lable>
-			<input required type='number' id='guests' name='guests' value={formData.guest}
-			 onChange={handleChange} placeholder='Guest#' min='1' max='10'/></div>
-
-		<div><lable htmlFor='event'>
+		<div><lable htmlFor='book-occasion'>
 				Are you celebating a special occasion with us?
 			</lable>
-			<input  type='checkbox' id='event' name='event' value={formData.eventTrue}
+			<input  type='checkbox' id='event' name='event'
 			 onChange={handleCheckboxChange} />Yes
 			<select disabled={isChecked ? false : true} required name='EventSelect'
-			 value={selectedOccasion} onChange={handleDropdownChange2}>
+			 value={occasion} onChange={(e) => setOccasion(e.target.value)}>
 					<option disabled value='default1'>Select Occasion</option>
 					<option value='Birthday'>Birthday</option>
                 	<option value='Engagement'>Engagement</option>
@@ -99,11 +95,16 @@ return  (
 
 			<div><label htmlFor='comments'>Comments and Special Requests:</label></div>
 				<div><textarea className='LongText' id='comments' name='comments'
-				 value={formData.comments} onChange={handleChange}
+				 value={comments} onChange={(e) => {setComments(e.target.value)}}
 				 placeholder='How can we best serve you?'/></div>
 
-			<div><button className='ResButton' type='submit'>Make Your Reservation</button></div>
+			<div>
+              <input aria-label="On Click" type={"submit"} value={"Make Your Reservation"}></input>
+            </div>
 
-				</form>
+						</fieldset>
+			</form>
 	);
 }
+
+export default BookingForm

@@ -1,14 +1,14 @@
-import Nav from '../Nav'
-import Foot from '../Foot'
 
-function ResGood(){
+const ConfirmedBooking = () => {
     return(
-        <body>
-            <Nav />
-            <div></div>
-            <Foot />
-        </body>
+        <header>
+            <section>
+            <h1>Booking has been confirmed!
+        </h1>
+            </section>
+        </header>
+
     )
 }
 
-export default ResGood
+export default ConfirmedBooking;

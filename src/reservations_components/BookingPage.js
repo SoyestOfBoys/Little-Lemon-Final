@@ -1,13 +1,14 @@
 import './BookingPage.css'
 import BookingForm from './BookingForm'
 
-function BookingPage(){
+const BookingPage = (props) =>{
     return(
         <div className='FormDiv'>
-            <h1>Reservation Form</h1>
-            <div className='Form'>
-                <BookingForm />
-            </div>
+            <h1>Book Your Table</h1>
+                <div className='Form'>
+                    <BookingForm availableTimes={props.availableTimes} dispatch={props.dispatch} 
+                    submitForm={props.submitForm}/>
+                </div>
         </div>
     )
 }

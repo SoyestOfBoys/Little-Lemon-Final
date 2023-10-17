@@ -1,16 +1,16 @@
 import Nav from '../Nav'
 import Foot from '../Foot'
 import './reservations.css'
-import BookingPage from '../reservations_components/BookingPage'
+import BookingForm from '../reservations_components/BookingForm'
 
-function Res(){
+const Reservations = (props) =>{
     return(
         <div>
         <Nav />
-        <BookingPage />
+        <BookingForm availalbeTimes={props.availableTimes} dispatch={props.dispatch} submitForm={props.SubmitForm} />
         <Foot />
         </div>
     )
 }
 
-export default Res
+export default Reservations
