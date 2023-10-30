@@ -11,6 +11,7 @@
     font-family: 'Markazi';
     -webkit-text-stroke: 1px #495E57;
     display: flex;
+    min-height: 90vh;
 }
 
 .InfoLeft{

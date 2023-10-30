@@ -1,9 +1,10 @@
+import './ResGood.css'
 
 const ConfirmedBooking = () => {
     return(
         <header>
-            <section>
-            <h1>Booking has been <span>confirmed!</span></h1>
+            <section className='Message'>
+            <h1>Your booking has been <span>confirmed!</span></h1>
             </section>
         </header>
 

@@ -1,0 +1,17 @@
+.Order{
+    background-color: #495E57;
+    color: #f4ce14;
+    font-size: 18pt;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.Order ul{
+    list-style: none;
+}
+
+.Order img{
+    width: 50vw;
+    padding-top: 5vh;
+}

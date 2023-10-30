@@ -36,7 +36,7 @@ const BookingForm = (props) => {
 
 return  (
 	<form className='ResForm' onSubmit={handleSumbit}>
-		<fieldset>
+		<fieldset className='feildset'>
 
 		<div>
 			<label htmlFor="book-date">Choose Date</label>

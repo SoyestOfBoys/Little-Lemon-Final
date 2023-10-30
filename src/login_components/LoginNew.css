@@ -1,10 +1,11 @@
-.LoginApp{
+.LoginNew{
     background-color: #495E57;
     width: 100vw;
     min-height: 50vh;
+    padding-bottom: 5vh;
 }
 
-.LoginApp h1{
+.LoginNew h1{
     font-size: 64pt;
     color: #F4CE14;
     text-align: center;
@@ -12,7 +13,7 @@
     padding-top: 2.5vh;
 }
 
-.LoginBox{
+.LoginNewBox{
     width: 50vw;
     background: #EDEFEE;
     color: #333333;
@@ -25,11 +26,11 @@
     border-radius: 16px;
 }
 
-.LoginButton{
+.LoginNewButton{
     margin-top: 2vh;
     margin-bottom: 1vh;
 }
-.LoginButton button{
+.LoginNewButton button{
     color:#495E57;
     background-color: #F4CE14;
     border-radius: 16px;
@@ -37,27 +38,32 @@
     font-size: 18pt;
     cursor: pointer;
 }
-.LoginButton button:hover{
+.LoginNewButton button:hover{
     color: #EDEFEE;
     background-color: #333333;
     border-color: #EDEFEE;
 }
 
-.LoginBox a{
+.LoginNewBox a{
     font-size: 18pt;
     color: #495E57;
 }
-.LoginBox a:visited{
+.LoginNewBox a:visited{
     color: #333333;
 }
-.LoginBox a:hover{
+.LoginNewBox a:hover{
     color: #F4CE14;
 }
 
-.LoginInput{
+.LoginNewInput{
     margin-top: 1vh;
 }
 
-.LoginInput label{
+.LoginNewInput label{
     font-size: 18pt;
+}
+
+.PassReqs{
+    font-size: 18pt;
+    padding-top: 1vh;
 }

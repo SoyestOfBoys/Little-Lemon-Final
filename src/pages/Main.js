@@ -8,6 +8,9 @@ import About from "./About";
 import Login from "./Login";
 import Menu from './Menu'
 import Order from './Order'
+import LoginNew from "../login_components/LoginNew";
+import LoginGood from '../login_components/LoginGood';
+import NewAccountGood from "../login_components/NewAccountGood";
 
 
 
@@ -67,6 +70,9 @@ const Main = () => {
                 <Route path='login' element={<Login />}  />
                 <Route path='menu' element={<Menu />} />
                 <Route path='order' element={<Order />} />
+                <Route path='loginnew' element={<LoginNew />} />
+                <Route path='logingood' element={<LoginGood />} />
+                <Route path='loginnewgood' element={<NewAccountGood />} />
             </Routes>
         </main>
 

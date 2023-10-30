@@ -1,15 +1,12 @@
-import Nav from '../Nav'
-import Foot from '../Foot'
+import './loginGood.css'
 
 function LoginGood(){
     return(
         <body>
-            <Nav />
-            <div>
+            <div className='Message'>
                 <h1>Login Succesfull!</h1>
-                <p>Welcome to Little Lemon!</p>
+                <p>Welcome back to Little Lemon!</p>
             </div>
-            <Foot />
         </body>
     )
 }
