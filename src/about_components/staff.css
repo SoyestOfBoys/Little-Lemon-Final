@@ -23,28 +23,29 @@
     border: 2px #F4CE14 solid;
     color: #333333;
     width: 25vw;
-    height: 40vw;
+    height: auto;
     border-radius: 16px;
     font-family: 'Markazi';
 }
 
 .staffer h2{
-    font-size: 4.444vw;
+    font-size: 40pt;
     font-weight: 500;
 }
 
 .staffer h3{
-    font-size: 2.778vw;
+    font-size: 18pt;
     font-weight: 400;
 }
 
 .staffer p{
-    font-size: 1.250vw;
+    font-size: 16pt;
     font-weight: 500;
     text-align: left;
-    padding-top: .5vw;
-    padding-left: .5vw;
-    padding-right: 1vw;
+    padding-top: .5vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    padding-bottom: 2vh;
 }
 
 .staffer img{
