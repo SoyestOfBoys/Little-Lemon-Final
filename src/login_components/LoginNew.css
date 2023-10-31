@@ -29,8 +29,6 @@
 .LoginNewButton{
     margin-top: 2vh;
     margin-bottom: 1vh;
-}
-.LoginNewButton button{
     color:#495E57;
     background-color: #F4CE14;
     border-radius: 16px;
@@ -38,7 +36,8 @@
     font-size: 18pt;
     cursor: pointer;
 }
-.LoginNewButton button:hover{
+
+.LoginNewButton:hover{
     color: #EDEFEE;
     background-color: #333333;
     border-color: #EDEFEE;

@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Link } from 'react-router-dom';
 import navLogo from './pics/header_logo.png'
 import './nav.css'
+import Hamburger from './pics/hamburger_icon_ll.png'
 
 export default function Nav() {
     return (
@@ -28,6 +29,9 @@ export default function Nav() {
                   <Link to='/login' className="NavLink">Login</Link>
               </li>
           </ul>
+          <a  href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <img disable className='Hamburger' src={Hamburger} alt='menu' />
+          </a>
           </nav>
       </body>
     );

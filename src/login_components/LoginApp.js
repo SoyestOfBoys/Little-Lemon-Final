@@ -20,7 +20,7 @@ function LoginApp(){
                         <input required type='text' /></div>
                         <div className='LoginInput'><label>Password: </label>
                         <input required type='password' /></div>
-                        <div className='LoginButton'><input className='LoginNewButton' aria-label="On Click"
+                        <div><input className='LoginButton' aria-label="On Click"
                             type={"submit"} value={"Create Account"} /></div>
                         <div><Link to='/loginNew'>Create a New Account</Link></div>
                     </div>

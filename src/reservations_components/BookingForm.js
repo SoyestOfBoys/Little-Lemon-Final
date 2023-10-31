@@ -6,7 +6,7 @@ import React, { useState } from "react";
 
 const BookingForm = (props) => {
 
-	const [occasion, setOccasion] = useState("");
+	const [occasion, setOccasion] = useState("default1");
 	const [guests, setGuests] = useState("");
 	const [date, setDate] = useState("");
 	const [times, setTimes] = useState("")
@@ -39,23 +39,23 @@ return  (
 		<fieldset className='feildset'>
 
 		<div>
-			<label htmlFor="book-date">Choose Date</label>
+			<label htmlFor="book-date">Choose Date:</label>
 			<input id="book-date" value={date} onChange={(e) =>
 			handleChange(e.target.value)} type="date" required/>
 		</div>
 
 		<div>
-              <label htmlFor="book-time">Choose Time</label>
+              <label htmlFor="book-time">Choose Time:</label>
               <select id="book-time" value={times} onChange={(e) =>
 				setTimes(e.target.value)} required>
-                <option value="">Select a Time</option>
+                <option value="">Select a Time:</option>
                {props.availableTimes.availableTimes.map(availableTimes =>
 				{return <option key={availableTimes}>{availableTimes}</option>})}
               </select>
         </div>
 
 		<div>
-              <label htmlFor="book-guests">Number of Guests</label>
+              <label htmlFor="book-guests">Number of Guests:</label>
               <input id="book-guests" min="1" value={guests} onChange={(e) =>
 				{setGuests(e.target.value)}} type={"number"} placeholder={0} max={10} required></input>
         </div>
@@ -71,17 +71,15 @@ return  (
 	<div className='phone'><label htmlFor='phone'>
 			Phone:
 		</label>
-		<p>+1</p>
-		<p>(</p><input inputmode='numeric'  required placeholder='XXX' type='tel' id='tel' name='tel'
+		+1 (<input inputmode='numeric'  required placeholder='XXX' type='tel' id='tel' name='tel'
 		 value={phone1} minLength={3} maxLength={3} size='3' pattern="[0-9]{3}" onChange={(e) => {setPhone1(e.target.value)}}/>
-		 <p>)</p>
+		 )
 		 <input inputmode='numeric' required placeholder='XXX' type='tel' id='tel' name='tel'
 		 value={phone2} minLength={3} maxLength={3} size='3' pattern="[0-9]{3}" onChange={(e) => {setPhone2(e.target.value)}}/>
-		 </div>
-		 <p>-</p>
+		 -
 		 <input inputmode='numeric'  required placeholder='XXXX' type='tel' id='tel' name='tel'
 		 value={phone3} minLength={4} maxLength={4} size='4' pattern="[0-9]{4}" onChange={(e) => {setPhone3(e.target.value)}}/>
-
+	</div>
 
 	<div><lable htmlFor='email'>
 			Email:
@@ -110,7 +108,7 @@ return  (
 				 placeholder='How can we best serve you?'/></div>
 
 			<div>
-              <input aria-label="On Click" type={"submit"} value={"Book Now"}></input>
+              <input className='ResButton' aria-label="On Click" type={"submit"} value={"Book Now"}></input>
             </div>
 
 						</fieldset>

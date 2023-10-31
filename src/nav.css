@@ -47,15 +47,8 @@
     padding-left: 0.347vw;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
     .navBar ul{
-    display: flex;
-    justify-content: space-around;
+        overflow:hidden
     }
 }
-
-@media screen and (max-width: 500px) {
-        .navLinks a{
-            font-size: 18pt;
-        }
-    }
