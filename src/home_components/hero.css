@@ -100,3 +100,6 @@
 .BookButton a:hover{
     color: #333333
 }
+
+@media screen and (max-width: 767px) {
+}

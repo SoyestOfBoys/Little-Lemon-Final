@@ -27,7 +27,7 @@
 .navLinks a{
     display: block;
     color: #F4CE14;
-    font-family: Karla;
+    font-family: 'Karla';
     font-size: 2.778vw;
     font-weight: 400;
     text-decoration: none;
@@ -39,16 +39,78 @@
     text-decoration: none;
 }
 
-.NavLogo{
+.NavLogoWeb{
     background-color: #edefee;
    width: 19.861vw;
     height: auto;
-    padding-right: 0.347vw;
-    padding-left: 0.347vw;
+    padding-left: 0.25vw;
+    padding-top: 1vh;
+    visibility: visible;
 }
 
-@media screen and (min-width: 600px) {
-    .navBar ul{
-        overflow:hidden
+.hamburger{
+    visibility: hidden;
+    position: absolute;
+}
+
+.NavLogoMobile{
+    visibility: hidden;
+    position: absolute;
+    width: 100px;
+    height: auto;
+}
+
+@media screen {
+    nav ul{
+    display: flex;
+    justify-content: space-around;
+    }
+    }
+
+@media (max-width: 767px){
+    .hamburger{
+        display: fixed;
+        z-index: 7;
+        padding-left: 5vw;
+        visibility: visible;
+    }
+
+    nav ul{
+        background-color: none;
+        height: auto;
+        width: 35vw;
+        margin-top: 50px;
+        position: fixed;
+        z-index: 7;
+    }
+
+    .navBar{
+        height: 15vw;
+        padding-top: 2.5vw;
+    }
+
+    .NavLogoMobile{
+        background-color: #edefee;
+        width: 35vw;
+        height: auto;
+        margin-left: 32.5vw;
+        position: absolute;
+        visibility: visible;
+    }
+
+    .NavLogoWeb{
+        visibility: hidden;
+        position: absolute;
+        width: .1px;
+    }
+
+    .NavButton{
+        background-color: #495e57;
+        border: 2px #333333 solid;
+        border-radius: 16px;
+        padding: 1vw;
+        z-index: 7;
+        text-align: center;
+        margin-bottom: 1vh;
     }
 }

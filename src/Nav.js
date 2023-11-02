@@ -2,14 +2,23 @@ import * as React from 'react';
 import { Link } from 'react-router-dom';
 import navLogo from './pics/header_logo.png'
 import './nav.css'
-import Hamburger from './pics/hamburger_icon_ll.png'
+import { useState } from 'react';
+import Hamburger from './Hamburger';
 
 export default function Nav() {
+    const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+    const toggleHamburger = () =>{
+        setHamburgerOpen( !hamburgerOpen )
+    }
+
     return (
         <body className='navBar'>
           <nav>
+            <div  className='NavList'>
+          <Link to='/'><img src={navLogo} alt='Little Lemon' className='NavLogoMobile'/></Link>
           <ul className='navLinks'>
-          <Link to='/'><img src={navLogo} alt='Little Lemon' className='NavLogo'/></Link>
+          <Link to='/'><img src={navLogo} alt='Little Lemon' className='NavLogoWeb'/></Link>
               <li className='NavButton'>
                   <Link to="/" className="NavLink">Home</Link>
               </li>
@@ -28,10 +37,19 @@ export default function Nav() {
               <li className='NavButton'>
                   <Link to='/login' className="NavLink">Login</Link>
               </li>
-          </ul>
-          <a  href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <img disable className='Hamburger' src={Hamburger} alt='menu' />
-          </a>
+          </ul></div>
+                <div className="hamburger" onClick={toggleHamburger}>
+                        <Hamburger isOpen={hamburgerOpen}/>
+                </div>
+
+            <style jsx>{`
+
+            @media (max-width: 767px){
+                nav ul{
+                    display: ${hamburgerOpen ? 'inline' : 'none'};
+                }
+            }
+        `}</style>
           </nav>
       </body>
     );

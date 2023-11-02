@@ -2,6 +2,16 @@
     margin: 0;
 }
 
+.footer{
+    background-color: #FBDABB;
+    font-family: 'Karla';
+    color: #495E57;
+    font-weight: 500;
+    font-size: 16pt;
+    display: flex;
+    width: 100vw;
+}
+
 .footer h1{
     font-family: 'Markazi';
     font-weight: 400;
@@ -12,6 +22,9 @@
 .footer ul{
     list-style: none;
     padding-top: 1vh;
+    display: block;
+    margin:0px;
+    padding: 0px;
 }
 
 .footer li{
@@ -32,24 +45,16 @@
 
 .footer a:hover{
     color: #333333;
-    font-weight: 600;
 }
 
-.footer{
-    background-color: #FBDABB;
-    font-family: 'Karla';
-    color: #495E57;
-    font-weight: 500;
-    font-size: 16pt;
-    display: flex;
-    justify-content: center;
-}
+
 
 .footLogo{
     width:12.690vw;
-    height:22.361vw;
+    height:auto;
     padding-top: 5vh;
     padding-bottom: 5vh;
+    padding-left: 2vw;
 }
 
 .siteMap{
@@ -84,5 +89,28 @@
 .MapDiv{
     padding-left: 5vw;
     padding-right: 5vw;
-    text-align: center;
+}
+
+@media (max-width: 767px){
+
+    .footLogo{
+        width:25vw;
+        height:auto;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        padding-left: 37.5vw;
+        justify-self: center;
+    }
+
+    .footer{
+        background-color: #FBDABB;
+        font-family: 'Karla';
+        color: #495E57;
+        font-weight: 500;
+        font-size: 16pt;
+        display: block;
+        width: 100vw;
+        justify-content: center;
+    }
+
 }

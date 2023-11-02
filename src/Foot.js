@@ -10,7 +10,7 @@ export default function Foot() {
             <img src={footLogo} alt='Little Lemon'  className='footLogo'/>
         </div>
         <div className="MapDiv">
-            <nav className='siteMap'>
+            <div className='siteMap'>
             <h1>Site Map</h1>
             <ul className='footList'>
             <li>
@@ -32,7 +32,7 @@ export default function Foot() {
                 <Link to='/login'>Login</Link>
             </li>
         </ul>
-        </nav>
+        </div>
         </div>
         <div className='contact'>
             <h1>Contact Info</h1>
