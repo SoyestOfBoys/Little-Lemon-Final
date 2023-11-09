@@ -19,7 +19,7 @@ function LoginNew(){
     return(
         <body className="LoginNew">
             <form onSubmit={handleNewLogin}>
-                <h1>Create Your Account</h1>
+                <h1>Create Your Account:</h1>
                 <fieldset  className='LoginNewBox'>
                     <div>
 

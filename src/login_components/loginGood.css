@@ -1,4 +1,4 @@
-.Message{
+.LoginMessage{
     color: #f4ce14;
     background-color: #495E57;
     text-align: center;
@@ -6,4 +6,10 @@
     font-family: 'Markazi';
     padding-top: 20vh;
     padding-bottom: 20vh;
+}
+
+@media screen and (max-width: 900px){
+    .LoginMessage{
+        font-size: 18pt;
+    }
 }

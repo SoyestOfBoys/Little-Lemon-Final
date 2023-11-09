@@ -22,7 +22,7 @@
     background-color: #EE9972;
     border: 2px #F4CE14 solid;
     color: #333333;
-    width: 25vw;
+    width: 30vw;
     height: auto;
     border-radius: 16px;
     font-family: 'Markazi';
@@ -50,5 +50,30 @@
 
 .staffer img{
     border:#F4CE14 2px solid;
+    height: auto;
+    width: 15vw;
     border-radius: 16px;
+}
+
+@media screen and (max-width: 900px){
+    .BioSec{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .staffer{
+        width: 75vw;
+        height: auto;
+        margin-top: .5vh;
+        margin-bottom: .5vh;
+    }
+
+    .staffer img{
+        border:#F4CE14 2px solid;
+        height: auto;
+        width: 33vw;
+        border-radius: 16px;
+    }
 }

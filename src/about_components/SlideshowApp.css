@@ -7,8 +7,8 @@
   }
 
   .image {
-    width: auto;
-    height: 60vh;
+    width: 75vw;
+    height: 46.875vw;
     border-radius: 16px;
     box-shadow: 0.394vw 0.394vw 8px  #333333;
     border: #F4CE14 2px solid;

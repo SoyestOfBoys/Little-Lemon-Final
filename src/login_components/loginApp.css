@@ -1,11 +1,14 @@
 .LoginApp{
     background-color: #495E57;
     width: 100vw;
-    min-height: 50vh;
+    height:auto;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5vh;
 }
 
 .LoginApp h1{
-    font-size: 64pt;
+    font-size: 40pt;
     color: #F4CE14;
     text-align: center;
     font-family: 'Markazi';
@@ -13,16 +16,18 @@
 }
 
 .LoginBox{
-    width: 50vw;
+    width: 75vw;
     background: #EDEFEE;
     color: #333333;
     font-family: 'Markazi', sans-serif;
-    margin-left: 25vw;
     margin-top: 5vh;
+    margin-left: 12.5vw;
     text-align: center;
     box-shadow: 0.394vw 0.394vw 8px  #333333;
     border-color: #333333;
     border-radius: 16px;
+    justify-content: center;
+    align-items: center;
 }
 
 .LoginButton{
@@ -59,4 +64,8 @@
 
 .LoginInput label{
     font-size: 18pt;
+}
+
+input[type=submit] {
+    font-size: 40pt;
 }

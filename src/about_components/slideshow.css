@@ -2,7 +2,6 @@
     background-color: #495E57;
     width: 100vw;
     height: auto;
-    max-height: 62.500vw;
 }
 
 .SlideApp{
@@ -16,7 +15,7 @@
     position: absolute;
     width:37.5vw;
     height:auto;
-    font-size: 4.444vh;
+    font-size: 4.444vw;
     font-weight: 500;
     font-family: 'Markazi';
     top: 7vw;

@@ -108,7 +108,7 @@ return  (
 				 placeholder='How can we best serve you?'/></div>
 
 			<div>
-              <input className='ResButton' aria-label="On Click" type={"submit"} value={"Book Now"}></input>
+              <input className='ResButton' aria-label="On Click" type={"submit"} value={"Book Now"} />
             </div>
 
 						</fieldset>

@@ -7,3 +7,9 @@
     padding-top: 20vh;
     padding-bottom: 20vh;
 }
+
+@media screen and (max-width: 900px){
+    .Message{
+        font-size: 18pt;
+    }
+}

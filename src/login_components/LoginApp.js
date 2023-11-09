@@ -13,7 +13,7 @@ function LoginApp(){
     return(
         <body className="LoginApp">
             <form onSubmit={handleSumbitLogin}>
-                <h1>Little Lemon Login</h1>
+                <h1>Little Lemon Login:</h1>
                 <fieldset  className='LoginBox'>
                     <div>
                         <div className='LoginInput'><label>Username: </label>
@@ -21,7 +21,7 @@ function LoginApp(){
                         <div className='LoginInput'><label>Password: </label>
                         <input required type='password' /></div>
                         <div><input className='LoginButton' aria-label="On Click"
-                            type={"submit"} value={"Create Account"} /></div>
+                            type={"submit"} value={"Login"} /></div>
                         <div><Link to='/loginNew'>Create a New Account</Link></div>
                     </div>
                 </fieldset>
