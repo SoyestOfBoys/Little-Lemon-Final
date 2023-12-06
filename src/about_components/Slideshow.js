@@ -1,5 +1,5 @@
 import SlideshowApp from './SlideshowApp'
-import './Slideshow.css'
+import './slideshow.css'
 
 function Slideshow(){
     return(
